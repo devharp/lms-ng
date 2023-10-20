@@ -1,1 +1,14 @@
-<router-outlet/>
+<div *ngIf="showSnack" class="fixed z-[999] w-[100%] h-[100%] flex justify-center" style="pointer-events: none;">
+    <div class="make-an-entry min-w-[250px] min-h-[55px] h-[max-content] bg-[rgb(50,50,50)] w-[max-content] text-[white] px-5 py-2 rounded-md flex items-center select-none" style="pointer-events: all;">
+        <div class="flex flex-grow justify-between">
+            <div>hello</div>
+            <div class="h-[1.5rem] text-[0.65rem] bg-[#ff3258] flex justify-center items-center px-2 rounded-md font-semibold uppercase cursor-pointer [&:active]:bg-[#d3445e] " style="transition: 50ms;">Close</div>
+        </div>
+    </div>
+</div>
+
+<button (click)="toggleSnack()">click mee</button>
+
+
+
+<router-outlet />

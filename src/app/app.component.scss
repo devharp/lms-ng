@@ -1,0 +1,13 @@
+.make-an-entry {
+    transform: translateY(-100%);
+    animation: make-an-entry-anim forwards 500ms;
+}
+
+@keyframes make-an-entry-anim {
+    from {
+        transform: translateY(-100%);
+    }
+    to {
+        transform: translateY(30%);
+    }
+}

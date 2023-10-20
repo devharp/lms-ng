@@ -5,6 +5,8 @@ import { AppComponent } from './app.component';
 import { UserAuthenticationModule } from './user-authentication/user-authentication.module';
 import { HTTP_INTERCEPTORS, HttpClientModule } from '@angular/common/http';
 import { ExceptionInterceptor } from './interceptors/exception.interceptor';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatSnackBarModule } from '@angular/material/snack-bar';
 
 @NgModule({
   declarations: [
@@ -14,7 +16,9 @@ import { ExceptionInterceptor } from './interceptors/exception.interceptor';
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    UserAuthenticationModule
+    UserAuthenticationModule,
+    BrowserAnimationsModule,
+    MatSnackBarModule
   ],
   providers: [
     {
