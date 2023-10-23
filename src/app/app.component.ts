@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { API_ROUTES } from 'src/api/api.routes';
 import { environment } from 'src/environments/environment';
+import { AppService } from './app.service';
 
 @Component({
   selector: 'app-root',
