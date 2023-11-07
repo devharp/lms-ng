@@ -8,6 +8,7 @@ import {  Component, Input } from '@angular/core';
 export class CategoryCardComponent {
 
   @Input() title: string = 'Category Title';
+  @Input() icon: string = 'assets/icons/default-image.svg';
 
   public readonly appTheme = {
     color: {
