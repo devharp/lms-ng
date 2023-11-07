@@ -3,7 +3,7 @@ import { CommonModule } from '@angular/common';
 import { LandingComponent } from './landing.component';
 import { ExploreComponent } from './explore/explore.component';
 import { RouterModule, Routes } from '@angular/router';
-import { SharedElementsModule } from "../shared-elements/shared-elements.module";
+import { SharedComponentsModule } from "../shared-components/shared-components.module";
 
 
 const landingRoutes: Routes = [
@@ -18,7 +18,7 @@ const landingRoutes: Routes = [
     imports: [
         CommonModule,
         RouterModule.forChild(landingRoutes),
-        SharedElementsModule
+        SharedComponentsModule
     ]
 })
 export class LandingModule {}

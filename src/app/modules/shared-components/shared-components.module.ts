@@ -15,4 +15,4 @@ import { AppButtonComponent } from './app-button/app-button.component';
     AppButtonComponent
   ]
 })
-export class SharedElementsModule { }
+export class SharedComponentsModule { }

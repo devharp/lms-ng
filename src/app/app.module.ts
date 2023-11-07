@@ -9,7 +9,7 @@ import { ExceptionInterceptor } from './interceptors/exception.interceptor';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppService } from './app.service';
 import { LandingModule } from './modules/landing/landing.module';
-import { SharedElementsModule } from './modules/shared-elements/shared-elements.module';
+import { SharedComponentsModule } from './modules/shared-components/shared-components.module';
 
 @NgModule({
   declarations: [
@@ -21,7 +21,7 @@ import { SharedElementsModule } from './modules/shared-elements/shared-elements.
     HttpClientModule,
     ToastrModule.forRoot(),
     BrowserAnimationsModule,
-    SharedElementsModule,
+    SharedComponentsModule,
     UserAuthenticationModule,
     LandingModule
   ],

@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { AppButtonVariant } from '../../shared-elements/app-button/enums/app-button.enum';
+import { AppButtonVariant } from '../../shared-components/app-button/enums/app-button.enum';
 
 @Component({
   selector: 'app-explore',
