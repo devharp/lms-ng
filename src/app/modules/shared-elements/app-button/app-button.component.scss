@@ -1,0 +1,25 @@
+.app-button-contained {
+    color: white;
+    background-color: var(--primary);
+    border: 1px solid var(--primary);
+}
+
+.app-button-contained:active {
+    color: var(--primary);
+    background-color: transparent;
+}
+
+.app-button-outlined {
+    color: white;
+    background-color: transparent;
+    border: 1px solid white;
+}
+
+.app-button-outlined:active {
+    color: var(--primary);
+    background-color: transparent;
+}
+
+.app-button-common {
+    font-family: 'DM Sans';
+}

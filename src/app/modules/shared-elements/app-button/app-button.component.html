@@ -1,0 +1,13 @@
+<button
+    [class]="'px-[1.5em] py-[1em] text-[1em] rounded-[2em] border-solid border-[1px] border-[var(--primary)] select-none cursor-pointer transition-[200ms] flex gap-[1.5em] items-center app-button-common ' + buttonTheme">
+    <ng-container *ngTemplateOutlet="textTemplate" class="bg-black"></ng-container>
+    <ng-container *ngTemplateOutlet="imageTemplate"></ng-container>
+</button>
+
+<ng-template #textTemplate>
+    <ng-content select="[app-button-text]" [style.background-color]="'red'"></ng-content>
+</ng-template>
+
+<ng-template #imageTemplate>
+    <ng-content select="[app-button-image]"></ng-content>
+</ng-template>

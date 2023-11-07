@@ -8,6 +8,8 @@ import { HTTP_INTERCEPTORS, HttpClientModule } from '@angular/common/http';
 import { ExceptionInterceptor } from './interceptors/exception.interceptor';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppService } from './app.service';
+import { LandingModule } from './modules/landing/landing.module';
+import { SharedElementsModule } from './modules/shared-elements/shared-elements.module';
 
 @NgModule({
   declarations: [
@@ -19,7 +21,9 @@ import { AppService } from './app.service';
     HttpClientModule,
     ToastrModule.forRoot(),
     BrowserAnimationsModule,
+    SharedElementsModule,
     UserAuthenticationModule,
+    LandingModule
   ],
   providers: [
     { provide: HTTP_INTERCEPTORS, useClass: ExceptionInterceptor, multi: true },
